@@ -144,4 +144,5 @@ def route_question_examples_all():
 def route_question_examples_by_type(qtype_id):
     return jsonify(get_question_examples(qtype_id))
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 8000))  # use PORT env var, default 8000
+    app.run(host="0.0.0.0", port=port)
