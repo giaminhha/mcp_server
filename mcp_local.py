@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 URI = "neo4j+s://a24a0218.databases.neo4j.io"  # Aura connection URI
 USER = "neo4j"  # Aura default user
-PASSWORD = "0tpP4rmK4dfRHFTRkaDdmPYLbZzKcKodNdbIAKn2GNU"  # copy from Aura console
+PASSWORD = "your_password"  # copy from Aura console
 driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
 
 # --- Cache dictionary ---
